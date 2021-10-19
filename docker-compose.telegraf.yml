@@ -1,0 +1,9 @@
+telegraf:
+  image: telegraf:alpine
+  container_name: telegraf
+  ports:
+    - "8125:8125/udp"
+    - "8092:8092/udp"
+    - "8094:8094"
+  volumes:
+    - "./telegraf.conf:/etc/telegraf/telegraf.conf:ro"

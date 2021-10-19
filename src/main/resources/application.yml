@@ -1,0 +1,12 @@
+management:
+  metrics:
+    export:
+      statsd:
+        flavor: telegraf
+        host: 127.0.0.1
+        port: 8125
+    enable:
+      logback: false
+      jvm: false
+      process: false
+      system: false
